@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -18,8 +20,8 @@
  <div class="page">
      <!-- Header -->
    <header class="header">
-       <div class="header_left">
-           <nav class="nav">
+       <div class="header__left">
+           <nav class="nav" id="nav--burger">
                <ul class="nav_list">
                    <li>
                        <a class="nav_link active" href="index.html">Home</a>  
@@ -36,16 +38,11 @@
                      <li>
                        <a class="nav_link" href="text.html">Add</a> 
                    </li>
-   
+               
    
                </ul>
               
            </nav>
-          
-           
-           
-          
-           
    
        </div>
        <div class="header_right">
@@ -54,13 +51,22 @@
                  <a class="nav_link" href="profile.html">Profile</a>  
                </ul>
            </nav>
+           <!-- sidebar_img -->
+           <img  class="header__avatar" src="assets/images/meAvatar100.png" alt="avatar">
+           <span class="profile_avatar--mobile--span">&#9013;</span>
+   
            <form class="search" action="search.html" method="get">
                 <input class="search_input" data-focus-visible-added
                 type="text" placeholder="Search on blog">
    
            </form>
-           <div class="burger_container">
-               <span class="burger"></span>
+   
+           
+   
+           <div class="burger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
            </div>
           
        </div>
@@ -69,10 +75,10 @@
    </header>
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar_header">
+      <div class="sidebar__header">
           <img src="assets/images/sidebar_header.jpg" alt="">
       </div>
-      <div class="sidebar_content">
+      <div class="sidebar__content">
           <div class="profile">
               <img class="profile_avatar" src="assets/images/meAvatar100.png" alt="avatar">
               
@@ -96,14 +102,14 @@
                 </li>
               </ul>
               <div class="profile_text">
-                  <p>Front-end developer. Making website since 2020 year.</p>
+                  <p>Web Developer. Making website since 2020 year.</p>
     
               </div>
     
           </div>
     
       </div>
-      <div class="sidebar_footer">
+      <div class="sidebar__footer">
           <a class="" target=""  href="works.html"><button  class="btn btn--red" type="button">My works</button></a>
           <button  class="btn btn--blue" type="button" id="send-mail">Send me</button>
     
@@ -144,7 +150,7 @@
              
                
              </article>
-             <!-- end1 -->
+             <!-- work2 -->
              <article class="work">
                  <div class="work__preview">
                      <img src="assets/images/banner2.png" alt="">
@@ -170,7 +176,86 @@
              
                
              </article>
-             <!-- end2 -->
+             <!-- work3-->
+             <article class="work">
+                 <div class="work__preview">
+                     <img src="assets/images/work3.png" alt="">
+                 </div>
+                 <div class="work__content">
+                     <h2 class="work__title">
+                         <a href="" target="_blank">Portfolio..</a>
+                     </h2>
+                     <div class="work__description">
+                     Example portfolio. 
+                     </div>
+                     <ul class="tags">
+                         <li class="tags__item">Use Gulp </li>
+                         <li class="tags__item">Use Sass</li>
+                         <li class="tags__item">Use HTML, CSS, JS</li>
+                     </ul>
+                     <div class="work__footer">
+                           <a class="btn btn--blue btn--rounded btn--sm" href=" https://romanburlaka78.github.io/Upwork-Landwind/" target="_blank">Go to site...</a>
+                     </div>
+                   
+             
+                 </div>
+             
+               
+             </article>
+             <!-- work4-->
+             <article class="work">
+                 <div class="work__preview">
+                     <img src="assets/images/furniture_shop.png" alt="">
+                 </div>
+                 <div class="work__content">
+                     <h2 class="work__title">
+                         <a href="" target="_blank">Furniture shop...</a>
+                     </h2>
+                     <div class="work__description">
+                     More that  one page  - Furniture shop. 
+                     </div>
+                     <ul class="tags">
+                         <li class="tags__item">Use Gulp </li>
+                         <li class="tags__item">Use Sass</li>
+                         <li class="tags__item">Use HTML, CSS, JS</li>
+                     </ul>
+                     <div class="work__footer">
+                           <a class="btn btn--blue btn--rounded btn--sm" href=" https://romanburlaka78.github.io/Upwork-Landwind/" target="_blank">Go to site...</a>
+                     </div>
+                   
+             
+                 </div>
+             
+               
+             </article>
+             
+             <!-- work5-->
+             <article class="work">
+                 <div class="work__preview">
+                     <img src="assets/images/modern.png" alt="">
+                 </div>
+                 <div class="work__content">
+                     <h2 class="work__title">
+                         <a href="" target="_blank">Modern..</a>
+                     </h2>
+                     <div class="work__description">
+                     Example modern design. 
+                     </div>
+                     <ul class="tags">
+                         <li class="tags__item">Use Gulp </li>
+                         <li class="tags__item">Use Sass</li>
+                         <li class="tags__item">Use HTML, CSS, JS</li>
+                     </ul>
+                     <div class="work__footer">
+                           <a class="btn btn--blue btn--rounded btn--sm" href=" https://romanburlaka78.github.io/Upwork-Landwind/" target="_blank">Go to site...</a>
+                     </div>
+                   
+             
+                 </div>
+             
+               
+             </article>
+             
              
              
             
@@ -276,6 +361,10 @@
 
     <!-- <footer>Footer</footer>
  -->
+
+
+
+    
 <!-- js -->
     <script src="assets/js/app.js"></script>
    

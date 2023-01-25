@@ -388,6 +388,8 @@ textarea {
     position: fixed;
     width: calc(100% - 300px);
     background-color: #202020;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     top: 0;
     left: 300px;
     z-index: 1000;
@@ -398,6 +400,27 @@ textarea {
         width: 100%;
         margin: 0 auto;
         position: unset;
+        overflow: hidden;
+    }
+}
+
+.header__avatar {
+    display: block;
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3px;
+}
+
+.header__avatar:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 991px) {
+    .header__avatar {
+        display: none;
     }
 }
 
@@ -411,12 +434,6 @@ textarea {
     position: relative;
 }
 
-@media (max-width: 991px) {
-    .header_left {
-        width: 40%;
-    }
-}
-
 .header_right {
     display: -ms-flexbox;
     display: flex;
@@ -427,7 +444,7 @@ textarea {
 
 @media (max-width: 991px) {
     .header_right {
-        width: 60%;
+        width: 96%;
     }
 }
 
@@ -463,15 +480,19 @@ textarea {
 
 .sidebar__content {
     padding: 0 2rem;
-    margin: -4rem;
+    margin: -6rem;
 }
 
 .sidebar__footer {
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+
+.sidebar--show {
+    display: block;
 }
 
 .main {
@@ -492,9 +513,9 @@ textarea {
     padding-right: 5rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .container {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 }
 
@@ -515,11 +536,15 @@ textarea {
     width: 30px;
     height: 18px;
     position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 5;
+    margin: 0 20px;
     cursor: pointer;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .burger span {
         position: absolute;
         top: 50%;
@@ -569,6 +594,24 @@ textarea {
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 2rem;
+}
+
+.profile_avatar--mobile {
+    display: none;
+    max-width: 2rem;
+    height: 3rem;
+    top: 10px;
+    margin-left: 2rem;
+    position: relative;
+    display: none;
+}
+
+.profile_avatar--mobile--span {
+    position: absolute;
+    display: block;
+    left: 5rem;
+    top: 1rem;
+    display: none;
 }
 
 .profile_name {
@@ -656,15 +699,36 @@ textarea {
     padding: 0.66em 1.25em;
 }
 
-@media (max-width: 991px) {
-    .nav {
-        display: none;
-    }
-}
-
 .nav_list {
     display: -ms-flexbox;
     display: flex;
+}
+
+@media (max-width: 991px) {
+    .nav_list {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #181818;
+        color: white;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: auto;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 1;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .nav_list.active {
+        left: 0;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 .nav_link {
@@ -681,6 +745,16 @@ textarea {
 .nav_link:hover {
     background-color: #3137C9;
     transition: background-color 0.2, linear;
+}
+
+@media (max-width: 991px) {
+    .nav_link {
+        font-size: 2.1rem;
+    }
+}
+
+.show {
+    display: block;
 }
 
 .search {
@@ -709,6 +783,20 @@ textarea {
     background-color: transparent;
     text-align: center;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+    .stories {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .stories {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 19.9rem 19.9rem;
+        grid-gap: 1.3rem;
+    }
 }
 
 .stories .stories__item:hover {
@@ -1283,14 +1371,16 @@ textarea {
 
 .work__preview {
     width: 31rem;
+    max-width: 260px;
+    max-height: 200px;
 }
 
 .work__preview img {
     display: block;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 .work__content {
@@ -1498,4 +1588,8 @@ img {
 
 .hide {
     display: none;
+}
+
+.locked {
+    overflow: hidden;
 }
