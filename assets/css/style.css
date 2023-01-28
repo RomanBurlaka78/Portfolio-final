@@ -540,7 +540,7 @@ textarea {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 5;
-    margin: 0 20px;
+    margin: 0 30px;
     cursor: pointer;
 }
 
