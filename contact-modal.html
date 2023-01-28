@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Portfolio | Signup</title>
+    <title></title>
 </head>
 <body>
  <div class="page">
@@ -33,7 +33,7 @@
                        <a class="nav_link" href="works.html">My works</a>
                    </li>
                    <li>
-                       <a class="nav_link" href="works.html">About me</a> 
+                       <a class="nav_link" href="profile.html">About me</a> 
                    </li>
                      <li>
                        <a class="nav_link" href="text.html">Add</a> 
@@ -122,44 +122,54 @@
         <div class="container">
         
              
+             <div class="modal hide">
+                 <div class="modal__content">
              
-             <h1 class="page__title page__title--center">Registration</h1>
+                     <button class="modal__close" type="button"> <img src="assets/images/close.svg" alt=""></button>
              
-             <form action="/" class="form form--auth" method="post">
-                 <div class="form__group form__group--md">
-                     <input class="form__control" type="text" placeholder="Your name">
-                     <span class="form__line"></span>
-                 </div>
-                      <!-- form__group 2 -->
-                     <div class="form__group form__group--md">
-                         <input class="form__control" type="email" placeholder="Your email">
-                         <span class="form__line"></span>
-                     </div>
-                        <!-- form__group 3 -->
+                     <form action="/" class="form form--auth" method="post">
+                
+                         <!-- form__group 2 -->
                         <div class="form__group form__group--md">
-                         <input class="form__control" type="password" placeholder="Your password">
-                         <span class="form__line"></span>
-                     </div>
-                        <!-- form__group 4 -->
-                        <div class="form__group form__group--md">
-                         <input class="form__control" type="password"  placeholder="Confirm  pasword">
-                         <span class="form__line"></span>
-                     </div>
-                     <div class="form__footer form__footer--center">
-                        <div class="form__group form__group--md">
-                             <button class="btn btn--blue btn--rounded btn--sm" type="button">Submit</button>
+                            <input class="form__control" type="text" placeholder="Your name">
+                            <span class="form__line"></span>
                         </div>
-                        <ul class="form__footer-list">
-                             <li><a class="form__footer-link" href="signin.html">Enter</a></li>
-                             <li><a class="form__footer-link" href="resset.html">Forget password?&Resset</a></li>
+                           <!-- form__group 3 -->
+                        <div class="form__group form__group--md">
+                                <input class="form__control" type="email" placeholder="Your email">
+                                <span class="form__line"></span>
+                        </div>
+             
+                        <div class="form__group form__group--md">
+                         <textarea class="form__control form__control--textarea" name="" placeholder="Text of message" ></textarea>
+                         <span class="form__line"></span>
+                        </div>
+                       
+                        <div class="form__footer">
+                           <div class="form__group form__group--md">
+                                <button class="btn btn--blue btn--rounded btn--sm" type="button">Send</button>
+                           </div>
+                        </div>
+             
+                        <ul class="modal__footer">
+                             <li>
+                                 email: <a href="mailto: info-mywebsite@gmail.com">info-mywebsite@gmail.com</a>
+                             </li>
+                             <li>
+                                 tel:<a href="tel: +4812332555"> +48 123 32 555</a>
+             
+                             </li>
                         </ul>
-                     </div>
-                   
-                     
-                 </form>
+                      
+                        
+                
+                
+                </form>
+             
+             
                  </div>
              
-             </form>
+             </div>
             
 
         </div>

@@ -540,8 +540,7 @@ textarea {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 5;
-    margin: 0 30px;
-    margin-right: 50px;
+    margin: 0 20px;
     cursor: pointer;
 }
 
@@ -1374,6 +1373,7 @@ textarea {
     width: 31rem;
     max-width: 260px;
     max-height: 200px;
+    padding: 10px;
 }
 
 .work__preview img {

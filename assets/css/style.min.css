@@ -497,7 +497,7 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
-  margin: 0 20px;
+  margin: 0 40px;
   cursor: pointer;
 }
 @media (max-width: 991px) {
@@ -529,6 +529,15 @@ textarea {
 .burger.active span:last-child {
   transform: rotate(45deg);
   top: calc(50% - 1px);
+}
+
+.profile__top {
+  display: none;
+}
+@media (max-width: 991px) {
+  .profile__top {
+    display: block;
+  }
 }
 
 .profile_avatar {
