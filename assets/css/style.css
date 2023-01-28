@@ -541,6 +541,7 @@ textarea {
     transform: translateY(-50%);
     z-index: 5;
     margin: 0 30px;
+    margin-right: 50px;
     cursor: pointer;
 }
 
