@@ -1594,3 +1594,6 @@ img {
 .locked {
     overflow: hidden;
 }
+.top__side {
+    margin-bottom: 30px;
+}

@@ -1391,3 +1391,21 @@ img {
 .locked {
   overflow: hidden;
 }
+.top__side {
+  margin-bottom: 50px;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto 50px auto;
+}
+@media(min-width:992px) {
+  .top__side {
+    display: none;
+  }
+}
+
+@media(max-width:992px) {
+  .main--home {
+    padding-top: 20px!important;
+    
+  }
+}
