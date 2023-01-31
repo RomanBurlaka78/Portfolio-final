@@ -786,6 +786,7 @@ textarea {
   position: absolute;
   bottom: 10px;
   z-index: 2;
+  left: 10px;
 }
 
 .add-post {
