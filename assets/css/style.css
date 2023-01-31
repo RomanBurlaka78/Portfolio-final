@@ -858,6 +858,7 @@ textarea {
 .stories__date {
     position: absolute;
     bottom: 10px;
+    left: 10px;
     z-index: 2;
 }
 
