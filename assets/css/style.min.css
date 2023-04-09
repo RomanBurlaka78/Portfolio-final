@@ -1410,3 +1410,16 @@ img {
     
   }
 }
+
+.profile__paragraf {
+  padding: 0 40px;
+  text-align: left;
+}
+
+.container--bug-reports {
+  max-width: 900px !important;
+}
+.post__preview--testing {
+  display: block;
+  margin: 0 auto;
+}
